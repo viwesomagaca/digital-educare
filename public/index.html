@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Digital educare</title>
+  <title>Digital educare</title>
 
-    <script type='text/javascript' src='handlebars-v4.0.5.js'></script>
+  <script type='text/javascript' src='handlebars-v4.0.5.js'></script>
 
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="educare.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Jim+Nightshade|Griffy|Kaushan+Script" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<body>
+  <link rel="stylesheet" type="text/css" href="educare.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Jim+Nightshade|Griffy|Kaushan+Script" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <header>
+  <!-- <nav>
     <div class="row navs">
       <div class="col-12">
         <ul class="nav justify-content-end navbar-dark bg-dark">
@@ -25,7 +25,7 @@
             <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="#reg">Register</a>
           </li>
 
           <li class="nav-item">
@@ -33,93 +33,98 @@
         </ul>
       </div>
     </div>
-  </header>
-  <h1> Digital Educare </h1>
-  <section id="home">
-    <div class="container clearfix">
-        <div class="image">
+  </nav> -->
 
-        <div class="user clearfix">
-            <div class="avatar">
+  <div id="navbar">
+  <a class="active" href="#home">Home</a>
+  <a href="#reg">News</a>
+  <a href="gov.html">Contact</a>
+</div>
 
-            </div>
-            <h2></h2>
-            <div class="actions">
 
-            </div>
-          </div>
-        </div>
-  </section>
-  <section>
-    <div class="row">
-      <div class="col-2">
 
+  </head>
+
+
+
+  <body>
+    <!-- <h1> Digital Educare </h1> -->
+    <section id="home">
+      <div class="container">
+        <br><br>
+        <br>
       </div>
-      <div class="col-6">
+      <br><br><br><br><br>
+    </section>
+
+      <section class="container center">
+        <div id="reg">
+          <h1 align-self="center"> Please register Below </h1>
+          <br>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
           </div>
           <input type="text" required id="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Surname</span>
-            </div>
-            <input type="text" required id="surname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Contact no</span>
-            </div>
-            <input type="text" required id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">ID number</span>
-            </div>
-            <input type="text" required id="id" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-          </div>
-
-          <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">School Need</label>
         </div>
-        <select required class="custom-select" id="inputGroupSelect01">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Surname</span>
+          </div>
+          <input type="text" required id="surname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"  id="inputGroup-sizing-default">Contact no</span>
+          </div>
+          <input type="text" required maxlength="10" minlength="10" id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">ID number</span>
+          </div>
+          <input type="text" required maxlength="13" minlength="13" autocomplete="off" id="id" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">occupation</label>
+          </div>
+          <select required class="custom-select" id="inputGroupSelect01">
           <option id="occupation" selected disabled>Select Your Option</option>
             <option id="occupation" >Principal</option>
-            <option id="occupation" >Student</option>
+            <option id="occupation" >Teacher</option>
             <option id="occupation" >Care Taker</option>
             <option id="occupation" >Student</option>
 
 
             </select>
-          </div>
+        </div>
 
-          <script class="schoolNames" type="text/x-handlebars-template">
-           <select>
+        <script class="schoolNames" type="text/x-handlebars-template">
+          <select>
            <option value="" disabled selected>Select Your Option </option>
                   {{#each data}}
               <option>{{this}} </option>
                   {{/each}}
               </select>
 
-          </script>
+        </script>
 
-          <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">School name</label>
-        </div>
-        <select required class="custom-select" id="schools">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">School Name</label>
+          </div>
+          <select required class="custom-select" id="schools">
           <option id="schoolName">{{data}}</option>
             </select>
-          </div>
-
-          <div class="input-group mb-3">
-        <div class="input-group-prepend">
-          <label class="input-group-text" for="inputGroupSelect01">School Need</label>
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">School Need</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
           <option id="school_need" disabled selected>Select Your Option</option>
           <option id="school_need">Books</option>
           <option id="school_need">Class Rooms</option>
@@ -136,37 +141,31 @@
 
 
             </select>
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default">Other</span>
           </div>
+          <textarea type="text" id="other" placeholder="Please specify your neeed" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> </textarea>
+        </div>
 
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Other</span>
-            </div>
-            <textarea type="text" id="other" placeholder="Please specify your neeed" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> </textarea>
-          </div>
-      </div>
+        <button type="button" id="submit" class="btn btn-primary btnSubmit" data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
+
+      <br> <br>
 </div>
+      </section>
 
-    <button type="button" id="submit" class="btn btn-primary btnSubmit" data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
+      <section class="comment">
 
-
-     <div class="displayPop">
-
-     </div>
-
-</div>
-
-  </section>
-  <section class="comment">
-
-  </section>
+      </section>
 
 
 
 
-</body>
+  </body>
 
-<script type="text/javascript" src="educare.js"></script>
+  <script type="text/javascript" src="educare.js"></script>
 
 
 </html>

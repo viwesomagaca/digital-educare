@@ -11,7 +11,12 @@ module.exports = function(mongoUrl) {
         occupation: 'String',
         cell_no: 'Number',
         other:'String',
-        school_need: 'String'
+        school_need: 'String',
+        Instution: 'String',
+        Sector:'String',
+        Postal_code:'Number',
+        Urban_rural:'String',
+        Telephone:'Number',
     })
 
     return {
