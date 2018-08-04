@@ -1,29 +1,109 @@
-<!DOCTYPE html>
+
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>Digital educare</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <script type='text/javascript' src='handlebars-v4.0.5.js'></script>
+<script>
+window.onload = function () {
 
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+var chart = new CanvasJS.Chart("chartContainer", {
+	theme: "light2",
+	animationEnabled: true,
+	title: {
+		text: "Quality Education"
+	},
+	subtitles: [{
+		text: "Western Cape, 2018",
+		fontSize: 16
+	}],
+	data: [{
+		type: "pie",
+		indexLabelFontSize: 18,
+		radius: 80,
+		indexLabel: "{label} - {y}",
+		yValueFormatString: "###0.0\"%\"",
+		click: explodePie,
+		dataPoints: [
+			{ y: 42, label: "" },
+			{ y: 21, label: ""},
+			{ y: 24.5, label: "" },
+			{ y: 9, label: "" },
+			{ y: 3.1, label: "Other Fuels" }
+		]
+	}]
+});
+chart.render();
 
-    <link rel="stylesheet" type="text/css" href="educare.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Jim+Nightshade|Griffy|Kaushan+Script" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+function explodePie(e) {
+	for(var i = 0; i < e.dataSeries.dataPoints.length; i++) {
+		if(i !== e.dataPointIndex)
+			e.dataSeries.dataPoints[i].exploded = false;
+	}
+}
 
+}
+  </script>
 </head>
 <body>
-  <h1> Digital Educare </h1>
+<div id="chartContainer" style="height: 370px; width: 100%;">
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  </div>
 
+  <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Instition</th>
+      <th scope="col">Sector</th>
+      <th scope="col">Phase</th>
+      <th scope="col">Suburbs</th>
+      <th scope="col">Postal_code</th>
 
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Bulumko high</th>
+      <td>Public</td>
+      <td>High School</td>
+      <td>Khayelitsha</td>
+      <td>7784</td>
 
+    </tr>
+    <tr>
+      <th scope="row">Athlone</th>
+      <td>Public</td>
+      <td>High School</td>
+      <td>Athlone</td>
+      <td>7760</td>
+
+    </tr>
+
+    <tr>
+      <th scope="row">ID mkhize</th>
+      <td>Public</td>
+        <td>Primary school</td>
+          <td>Gugulethu</td>
+          <td>7750</td>
+    </tr>
+  <tr>
+      <th scope="row">Chris Hani</th>
+      <td>Public</td>
+        <td>Primary school</td>
+          <td>Delft</td>
+          <td>1519</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Claremont girls</th>
+      <td>Private</td>
+      <td>High school</td>
+      <td>Claremont</td>
+      <td>7735</td>
+
+    </tr>
+
+</tbody>
+</table>
 </body>
-
-<script type="text/javascript" src="educare.js"></script>
-
-
-</html>
+</div></html>
