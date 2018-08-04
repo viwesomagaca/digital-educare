@@ -222,3 +222,30 @@
 //   });
 //   showAll();
 // });
+
+
+$.ajax({
+  url:"https://data.code4sa.org/resource/dxgm-6rn7.json",
+  Type: "GET"
+}).then(function(data){
+  console.log(data);
+
+});
+
+// function addschools({
+//   var firstname = document.getElementById("").value;
+//   var surname = document.getElementById("").value;
+//   var idnumber = document.getElementById("").value;
+//   var schoolName = document.getElementById("").value;
+//   var occupation = document.getElementById("").value;
+//   var cell_no = document.getElementById("").value;
+//   var address = document.getElementById("").value;
+//   var school_need = document.getElementById("").value;
+//
+//   $.ajax({
+//     url:"",
+//     type:"POST",
+//   }).function(data){
+//     console.log(data);
+//   }
+// })

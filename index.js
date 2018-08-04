@@ -34,12 +34,12 @@ app.use(function(req, res, next){
   next();
 });
 
-// app.get("/api/shoes", shoeapiroutes.index)
+app.get("/api/school", educareapiroutes.index)
 // app.get("/api/shoes/brand/:brandname", shoeapiroutes.brandname)
 // app.get("/api/shoes/size/:size", shoeapiroutes.brandsize);
 // app.get("/api/shoes/brand/:brandname/size/:size", shoeapiroutes.shoeBrandSize)
 // app.post("/api/shoes/sold/:id", shoeapiroutes.stockUpdate)
-// app.post("/api/shoes", shoeapiroutes.displayInstock)
+app.post("/api/school", educareapiroutes.add)
 
 
 let portNumber =process.env.PORT || 4000;
