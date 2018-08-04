@@ -1,5 +1,5 @@
-// var availableStock = document.getElementById('shoesCat').innerHTML;
-// var template = Handlebars.compile(availableStock);
+ var schoolList = document.getElementById('school').innerHTML;
+ var template = Handlebars.compile(schoolList);
 //
 // // This is a function that is used to view all the stock, works as a onload
 // $.ajax({
@@ -41,6 +41,7 @@
 //   })
 // }
 // brandUnique();
+
 //
 //
 //

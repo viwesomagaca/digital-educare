@@ -1,0 +1,50 @@
+a{
+  color: white;
+  font-weight: bold;
+}
+*{
+  /* margin: auto; */
+  text-align: center;
+}
+.msg{
+   color:green;
+}
+form{
+   margin: auto;
+}
+.btn-info{
+margin-top: 2rem;
+}
+.btnSubmit{
+   margin: auto;
+   margin-left: 28em;
+   margin-top: 1em;
+}
+.navs{
+  margin-bottom: 1rem;
+}
+#span{
+  width: 110px;
+  margin-left: -01px;
+}
+
+.logo{
+  height: 140px;
+  width: 150px;
+  margin-right: 20%;
+  float: right;
+}
+.report{
+  width: 60%;
+  text-align: center;
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.input1{
+  margin-bottom: 10px;
+}
+
+.text{
+  margin-bottom: 30px;
+}
