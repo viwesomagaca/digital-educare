@@ -6,11 +6,12 @@ module.exports = function(mongoUrl) {
     const schools = mongoose.model('schools', {
         name: 'String',
         surname: 'String',
-        number: 'Number',
+        id_no: 'Number',
         schoolName:'String',
         occupation: 'String',
-        Address:'String',
-        Need: 'String'
+        cell_no: 'Number',
+        address:'String',
+        school_need: 'String'
     })
 
     return {

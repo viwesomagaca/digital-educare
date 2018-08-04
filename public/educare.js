@@ -1,5 +1,5 @@
-// var availableStock = document.getElementById('shoesCat').innerHTML;
-// var template = Handlebars.compile(availableStock);
+ var schoolList = document.getElementById('school').innerHTML;
+ var template = Handlebars.compile(schoolList);
 //
 // // This is a function that is used to view all the stock, works as a onload
 // $.ajax({
@@ -41,6 +41,7 @@
 //   })
 // }
 // brandUnique();
+
 //
 //
 //
@@ -222,3 +223,31 @@
 //   });
 //   showAll();
 // });
+
+$(document).ready(function(){
+$.ajax({
+  url:"https://data.code4sa.org/resource/dxgm-6rn7.json",
+  Type: "GET"
+}).then(function(data){
+  console.log(data);
+
+});
+}
+
+$("submit").click(function(){
+  var firstname = document.getElementById("").value;
+  var surname = document.getElementById("").value;
+  var idnumber = document.getElementById("").value;
+  var schoolName = document.getElementById("").value;
+  var occupation = document.getElementById("").value;
+  var cell_no = document.getElementById("").value;
+  var address = document.getElementById("").value;
+  var school_need = document.getElementById("").value;
+
+  $.ajax({
+    url:"http://localhost:4000/api/school",
+    type:"POST",
+  }).function(data){
+    console.log(data);
+  }
+})
