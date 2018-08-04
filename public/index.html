@@ -30,7 +30,7 @@
       <div class="col-12">
         <ul class="nav justify-content-end navbar-dark bg-dark">
           <li class="nav-item">
-            <a class="nav-link active" href="searchpage.html">Home</a>
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
@@ -43,7 +43,7 @@
     </div>
   </header>
   <h1> Digital Educare </h1>
-  <section class="home">
+  <section id="home">
     <div class="container clearfix">
         <div class="image">
 
@@ -68,45 +68,94 @@
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
           </div>
-          <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+          <input type="text" required id="firstname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Surname</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" required id="surname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">Contact no</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" required id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-default">ID number</span>
             </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            <input type="text" required id="id" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
           </div>
 
           <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-default">Occupation</span>
-            </div>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">School Need</label>
+        </div>
+        <select required class="custom-select" id="inputGroupSelect01">
+          <option id="occupation" selected disabled>Select Your Option</option>
+            <option id="occupation" >Principal</option>
+            <option id="occupation" >Student</option>
+            <option id="occupation" >Care Taker</option>
+            <option id="occupation" >Student</option>
+
+
+            </select>
           </div>
+
+          <script class="schoolNames" type="text/x-handlebars-template">
+           <select>
+           <option value="" disabled selected>Select Your Option </option>
+                  {{#each data}}
+              <option>{{this}} </option>
+                  {{/each}}
+              </select>
+
+          </script>
+
           <div class="input-group mb-3">
         <div class="input-group-prepend">
           <label class="input-group-text" for="inputGroupSelect01">School name</label>
         </div>
-        <select class="custom-select" id="inputGroupSelect01">
-          <option selected>Choose...</option>
+        <select required class="custom-select" id="schools">
+          <option id="schoolName">{{data}}</option>
             </select>
+          </div>
+
+          <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01">School Need</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option id="school_need" disabled selected>Select Your Option</option>
+          <option id="school_need">Books</option>
+          <option id="school_need">Class Rooms</option>
+          <option id="school_need">Electricity</option>
+          <option id="school_need">Computers</option>
+          <option id="school_need">Water</option>
+          <option id="school_need">Teachers</option>
+          <option id="school_need">Tablets</option>
+          <option id="school_need">Laboratories</option>
+          <option id="school_need">Furniture</option>
+          <option id="school_need">Internet Facilities</option>
+          <option id="school_need">Sports Facilities</option>
+
+
+
+            </select>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Other</span>
+            </div>
+            <textarea type="text" id="other" placeholder="Please specify your neeed" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"> </textarea>
           </div>
       </div>
 </div>
 
-    <button type="button" class="btn btn-primary btnSubmit" data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
+    <button type="button" id="submit" class="btn btn-primary btnSubmit" data-toggle="modal" data-target=".bs-example-modal-sm">Submit</button>
 
 
      <div class="displayPop">

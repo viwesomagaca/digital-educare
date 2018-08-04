@@ -10,7 +10,7 @@ module.exports = function(mongoUrl) {
         schoolName:'String',
         occupation: 'String',
         cell_no: 'Number',
-        address:'String',
+        other:'String',
         school_need: 'String'
     })
 
