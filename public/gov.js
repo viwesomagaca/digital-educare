@@ -28,9 +28,6 @@ $.ajax({
 }).then(function(data){
 console.log(data);
 
-   // console.log(results);
-   // institutions.push(results);
-   // console.log(institutions);
   var schools = template({
     data : data
   });

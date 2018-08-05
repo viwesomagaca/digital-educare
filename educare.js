@@ -14,22 +14,27 @@ module.exports = function(educare) {
   const add = function(req, res, done){
 
     var need = req.body;
+    console.log(need);
     educareModel.create({
-      name: need.name,
-      surname: need.surname,
       id_no: need.id_no,
-      schoolName: need.schoolName,
+      school: need.school,
       occupation: need.occupation,
       cell_no: need.cell_no,
-      address: need.address,
-      school_need: need.school_need
+      other:need.other,
+      school_need: need.school_need,
+      sector:need.sector,
+      phase_doe:need.phase_doe,
+      magisterial_district: need.magiserial_district,
+      town_city: need.town_city,
+      postal_code: need.postal_code,
+      urban_rural: need.urban_rural,
+      telephone:need.telephone
     }, function(err, result){
       if(err){
         return done(err);
-
         }
-        console.log(result)
         res.send(result)
+        console.log("Back end Post",result)
       })
     }
 

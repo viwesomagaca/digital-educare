@@ -50,7 +50,7 @@
         <div id="reg">
           <h1 align-self="center"> Please register Below </h1>
           <br>
-        <div class="input-group mb-3">
+        <!-- <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">Name</span>
           </div>
@@ -61,13 +61,8 @@
             <span class="input-group-text" id="inputGroup-sizing-default">Surname</span>
           </div>
           <input type="text" required id="surname" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text"  id="inputGroup-sizing-default">Contact no</span>
-          </div>
-          <input type="text" required maxlength="10" minlength="10" id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        </div>
+        </div> -->
+
         <div class="input-group mb-3">
           <div class="input-group-prepend">
             <span class="input-group-text" id="inputGroup-sizing-default">ID number</span>
@@ -77,15 +72,21 @@
 
         <div class="input-group mb-3">
           <div class="input-group-prepend">
+            <span class="input-group-text"  id="inputGroup-sizing-default">Contact no</span>
+          </div>
+          <input type="text" required maxlength="10" minlength="10" id="contact" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
             <label class="input-group-text" for="inputGroupSelect01">occupation</label>
           </div>
           <select required class="custom-select" id="inputGroupSelect01">
           <option id="occupation" selected disabled>Select Your Option</option>
-            <option id="occupation" >Principal</option>
-            <option id="occupation" >Teacher</option>
-            <option id="occupation" >Care Taker</option>
-            <option id="occupation" >Student</option>
-
+            <option value="Principal" >Principal</option>
+            <option value="Teacher" >Teacher</option>
+            
 
             </select>
         </div>
@@ -105,7 +106,7 @@
             <label class="input-group-text" for="inputGroupSelect01">School Name</label>
           </div>
           <select required class="custom-select" id="schools">
-          <option id="schoolName">{{data}}</option>
+          <option id="school">{{data}}</option>
             </select>
         </div>
 

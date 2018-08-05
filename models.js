@@ -5,19 +5,25 @@ module.exports = function(mongoUrl) {
 
     const schools = mongoose.model('schools', {
         id_no: 'Number',
-        schoolName:'String',
+        school:{
+            sector:'String',
+            phase_doe: 'String',
+            magistratial_district:'String',
+            town:'String',
+            postal_code:'Number',
+            urban_rural:'String',
+            telephone:'Number',
+        },
         occupation: 'String',
         cell_no: 'Number',
         other:'String',
         school_need: 'String',
-        Instution: 'String',
-        Sector:'String',
-        Postal_code:'Number',
-        Urban_rural:'String',
-        Telephone:'Number',
+
     })
+
 
     return {
     schools
+
     };
 }

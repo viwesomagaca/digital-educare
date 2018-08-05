@@ -81,10 +81,11 @@ function explodePie(e) {
       <h3> Available stock </h3>
       <table class="table table-striped table-hover">
           <tr>
-              <th>Name</th>
-              <th>Surname</th>
-              <th>Ocupation</th>
+              <th>ID No</th>
               <th>Instution </th>
+              <th>Ocupation</th>
+              <th>Cell Number</th>
+              <th>Other </th>
               <th>School Need </th>
               <th>Sector</th>
               <th>Magisterial District</th>
@@ -99,14 +100,14 @@ function explodePie(e) {
               <td>{{name}}</td>
               <td>{{surname}}</td>
               <td>{{occupation}}</td>
-              <td>{{institution}}</td>
+              <td>{{school.institution}}</td>
               <td>{{school_need}} </td>
               <td>{{sector}} </td>
-              <td>{{magiserial_district}} </td>
-              <td>{{city}} </td>
+              <td>{{magisterial_district}} </td>
+              <td>{{}} </td>
               <td>{{postal_code}} </td>
-              <td>{{Urban_rural}} </td>
-              <td>{{contact}} </td>
+              <td>{{urban_rural}} </td>
+              <td>{{telephone}} </td>
 
           </tr>
           {{/each}}
@@ -114,6 +115,7 @@ function explodePie(e) {
     </script>
 
     <div id="schools"></div>
+      <script type="text/javascript" src="educare.js"></script>
   <script type="text/javascript" src="gov.js"></script>
 </body>
 
