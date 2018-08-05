@@ -4,8 +4,6 @@ module.exports = function(mongoUrl) {
     mongoose.connect(mongoUrl);
 
     const schools = mongoose.model('schools', {
-        name: 'String',
-        surname: 'String',
         id_no: 'Number',
         schoolName:'String',
         occupation: 'String',

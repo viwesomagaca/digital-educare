@@ -2,8 +2,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="educare.css">
 <script>
 window.onload = function () {
 
@@ -44,6 +44,32 @@ function explodePie(e) {
 
 }
   </script>
+
+
+    <title>Digital educare</title>
+
+    <script type='text/javascript' src='handlebars-v4.0.5.js'></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="educare.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Jim+Nightshade|Poppins|Kaushan+Script" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <div id="navbar">
+    <a href="gov.html">Feeback</a>
+    <a href="#reg">Registration</a>
+    <a class="active" href="#home">Home</a>
+  </div>
+
+
 </head>
 <body>
 <div id="chartContainer" style="height: 370px; width: 100%;">
@@ -51,30 +77,44 @@ function explodePie(e) {
   </div>
 
 
-  <script id="shoesCat" type="text/x-handlebars-template">
+  <script class="schoolNames" type="text/x-handlebars-template">
       <h3> Available stock </h3>
       <table class="table table-striped table-hover">
           <tr>
-              <th> Brand Name</th>
-              <th> color </th>
-              <th>Size </th>
-              <th>price</th>
-              <th> In Stock </th>
-              <th> Purchase </th>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Ocupation</th>
+              <th>Instution </th>
+              <th>School Need </th>
+              <th>Sector</th>
+              <th>Magisterial District</th>
+              <th>City </th>
+              <th>Postal Code </th>
+              <th>Urban/ Rural </th>
+              <th>Contact Number </th>
+
           </tr>
-          {{#each shoes}}
+          {{#each data}}
           <tr>
-              <td>{{brand}}</td>
-              <td>{{color}}</td>
-              <td>{{size}}</td>
-              <td>R {{price}}</td>
-              <td>{{in_stock}} </td>
-              <td> <input type="button" id={{_id}} value="Purchase" ></td>
+              <td>{{name}}</td>
+              <td>{{surname}}</td>
+              <td>{{occupation}}</td>
+              <td>{{institution}}</td>
+              <td>{{school_need}} </td>
+              <td>{{sector}} </td>
+              <td>{{magiserial_district}} </td>
+              <td>{{city}} </td>
+              <td>{{postal_code}} </td>
+              <td>{{Urban_rural}} </td>
+              <td>{{contact}} </td>
+
           </tr>
           {{/each}}
       </table>
+    </script>
 
-<script type="text/javascript" src="gov.js"></script>
-
+    <div id="schools"></div>
+  <script type="text/javascript" src="gov.js"></script>
 </body>
-</div></html>
+
+</html>

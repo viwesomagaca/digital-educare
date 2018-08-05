@@ -71,4 +71,7 @@ $("#submit").click(function(){
   }).then(function(data){
     console.log(data);
   })
+
+  alert("Thank you,Your information have been submitted.")
+location.reload();
 });
